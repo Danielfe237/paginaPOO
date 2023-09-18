@@ -1,0 +1,126 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Centrar la imagen del header */
+header img {
+    display: block;
+    margin: 0 auto;
+    width: 50px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: 50px; /* Ajusta la altura de la imagen según sea necesario */
+    margin-bottom: 10px; /* Espacio entre la imagen y los textos */
+}
+
+/* Contenedor para los textos en el header */
+.header-text-container {
+    text-align: center;
+}
+
+/* Textos en el header centrados y al lado */
+.header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para los textos del header */
+.header-text ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Mostrar los elementos de la lista en línea */
+    align-items: center; /* Alinear verticalmente los elementos */
+}
+
+.header-text ul li {
+    margin: 0 20px;
+}
+
+/* Carrusel centrado */
+.centered-carousel {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: autox;
+}
+
+.centered-carousel div {
+    text-align: center;
+}
+
+.centered-carousel img {
+    max-width: 100%;
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Botones del carrusel */
+.carousel-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.prev-button,
+.next-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #0056b3;
+}
+
+/* Imágenes en los lados */
+.side-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.side-images img {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Contenido adicional */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+}

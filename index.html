@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- Slick Carousel JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <title>Pagina Web</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Registro</li>
+                <li>Cartelera</li>
+                <li><img src="./img/Boleteria-removebg-preview.png" alt="logo_Header"></li>
+                <li>Nosotros</li>
+            </ul>
+        </nav> 
+    </header>
+    <div class="centered-carousel">
+        <div><img src="./img/Banner SMATSV.jpeg" alt="banner_Spiderman"></div>
+        <div><img src="./img/Barbie banner.jpeg" alt="banner_Barbie"></div>
+        <div><img src="./img/Oppenheimer.jpg" alt="banner_Oppenheimer"></div>
+    </div>
+
+    <!-- Botones para navegar el carrusel -->
+    <div class="carousel-controls">
+        <button class="prev-button">Anterior</button>
+        <button class="next-button">Siguiente</button>
+    </div>
+
+    <div class="side-images">
+        <img src="/img/Mini Opp.png" alt="mini_Oppenheimer">
+        <img src="./img/Mini barbie.png" alt="mini_Barbie">
+        <img src="./img/Mini Las chicas.png" alt="_mini_Las_Chicas_Estan_Bien">
+        <img src="./img/Mini tinina.png" alt="mini_Tinina">
+    </div>
+
+    <h2>Estrenos</h2>
+    <h2>Proximos Estrenos</h2>
+
+    <footer>
+        <img src="./img/Boleteria-removebg-preview.png" alt="logo_Footer">
+        <p>Direccion:</p>
+        <p>Cra 33a # 30-20 Bogotá D.C </p>
+        <p>Contactenos: </p>
+        <p>sreyes@boletoselectronicos.com</p>
+        <p>khuertas@boletoselectronicos.com</p>
+        <p>dmalambo@boletoselectronicos.com</p>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.centered-carousel').slick({
+                centerMode: true,
+                centerPadding: '0',
+                slidesToShow: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false // Desactivar las flechas predeterminadas de Slick Carousel
+            });
+
+            // Agregar funcionalidad a los botones
+            $('.prev-button').click(function(){
+                $('.centered-carousel').slick('slickPrev');
+            });
+
+            $('.next-button').click(function(){
+                $('.centered-carousel').slick('slickNext');
+            });
+        });
+    </script>
+</body>
+</html>
